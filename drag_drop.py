@@ -7,7 +7,6 @@ import time
 driver = webdriver.Chrome()
 driver.maximize_window()
 # Open the URL
-#driver.get(" https://demoqa.com/droppable")
 driver.get("https://jqueryui.com/droppable/")
 time.sleep(3)
 
@@ -21,7 +20,6 @@ time.sleep(3)
 # Create an ActionChains object
 actions = ActionChains(driver)
 time.sleep(2)
-
 
 actions.drag_and_drop(source_element,target_element).perform()
 time.sleep(3)
